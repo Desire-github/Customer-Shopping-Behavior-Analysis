@@ -153,8 +153,6 @@ Calculated the total revenue contribution from each customer age group.
 
 An interactive one-page Power BI dashboard was created to visualize the major findings. The full dashboard is available as a [PDF](dashboard/Customer_Behaviour_Dashboard.pdf).
 
-![Dashboard preview](YOUR-IMAGE-FOLDER/YOUR-IMAGE-NAME.png)
-
 ### Dashboard KPIs
 
 * Number of Customers: 3.9K
