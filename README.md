@@ -1,5 +1,7 @@
 # Customer Shopping Behavior Analysis
 
+**Power BI Dashboard:** [View the dashboard (PDF)](Dashboard/Customer_Behaviour_Dashboard.pdf)
+
 ## 📌 Project Overview
 
 This project analyzes customer shopping behavior using transactional data from 3,900 purchases across different product categories.
@@ -15,7 +17,6 @@ The goal is to uncover insights into:
 
 The analysis combines Python, PostgreSQL/SQL, and Power BI to transform raw transactional data into meaningful business insights and recommendations.
 
-
 ## 🛠️ Tools & Technologies
 
 * Python
@@ -24,7 +25,6 @@ The analysis combines Python, PostgreSQL/SQL, and Power BI to transform raw tran
 * PostgreSQL
 * SQL
 * Power BI
-
 
 ## 📊 Dataset
 
@@ -59,9 +59,9 @@ Key features include:
 
 There were 37 missing values in the Review Rating column.
 
-
 ## 🔄 Project Workflow
 
+```
 Raw Dataset
      ↓
 Data Cleaning & Preparation
@@ -77,25 +77,25 @@ SQL Business Analysis
 Power BI Dashboard
      ↓
 Business Insights & Recommendations
+```
 
-🐍 Data Preparation Using Python
+## 🐍 Data Preparation Using Python
 
-The dataset was cleaned and prepared using Python and Pandas
+The dataset was cleaned and prepared using Python and Pandas.
 
 ### Key steps:
 
 * Loaded the dataset using Pandas
-* Explored the dataset using 'df.info()' and 'df.describe()'
+* Explored the dataset using `df.info()` and `df.describe()`
 * Checked for missing values
 * Imputed missing Review Rating values using the median rating for each product category
 * Standardized column names using snake_case
-* Created an 'age_group' feature
-* Created a 'purchase_frequency_days' feature
-* Checked the relationship between 'discount_applied' and 'promo_code_used'
-* Removed the redundant 'promo_code_used' column
+* Created an `age_group` feature
+* Created a `purchase_frequency_days` feature
+* Checked the relationship between `discount_applied` and `promo_code_used`
+* Removed the redundant `promo_code_used` column
 * Connected Python to PostgreSQL
 * Loaded the cleaned dataset into PostgreSQL for SQL analysis
-
 
 ## 🗄️ SQL Business Analysis
 
@@ -151,7 +151,9 @@ Calculated the total revenue contribution from each customer age group.
 
 ## 📈 Power BI Dashboard
 
-An interactive Power BI dashboard was created to visualize the major findings.
+An interactive one-page Power BI dashboard was created to visualize the major findings. The full dashboard is available as a [PDF](dashboard/Customer_Behaviour_Dashboard.pdf).
+
+![Dashboard preview](YOUR-IMAGE-FOLDER/YOUR-IMAGE-NAME.png)
 
 ### Dashboard KPIs
 
@@ -159,20 +161,26 @@ An interactive Power BI dashboard was created to visualize the major findings.
 * Average Review Rating: 3.75
 * Average Purchase Amount: $59.76
 
-### Dashboard Analysis
+### Dashboard Charts
 
-The dashboard includes visualizations for:
-
+* Subscription Status (subscribers vs. non-subscribers)
 * Revenue by Category
 * Sales by Category
-* Subscription Status
-* Customer Gender
-* Shipping Type
 * Revenue by Age Group
 * Sales by Age Group
 
-The dashboard also shows the distribution between subscribers and non-subscribers.
+### Interactive Filters
 
+* Subscription Status
+* Gender
+* Category
+* Shipping Type
+
+### Key Findings
+
+* Only 7.3% of customers are subscribers (92.7% are non-subscribers)
+* Clothing is the top category by revenue
+* Young Adults are the highest-spending age group
 
 ## 💡 Business Recommendations
 
@@ -202,6 +210,7 @@ Focus marketing efforts on high-revenue age groups and customers using express s
 
 ## 📁 Project Structure
 
+```
 customer-shopping-behavior-analysis/
 │
 ├── README.md
@@ -218,9 +227,12 @@ customer-shopping-behavior-analysis/
 ├── dashboard/
 │   └── Customer_Behaviour_Dashboard.pdf
 │
+├── your-image-folder/
+│   └── dashboard-image-file.png
+│
 └── docs/
     └── Customer_Shopping_Behavior_Analysis.pdf
-
+```
 
 ## 🎯 Key Skills Demonstrated
 
@@ -238,8 +250,6 @@ customer-shopping-behavior-analysis/
 * Power BI Dashboard Development
 * Business Recommendations
 
-
 ## 👩‍💻 Project Objective
 
-This project demonstrates an end-to-end data analytics workflow, starting from raw customer transaction data and progressing through **Data cleaning, exploratory analysis, SQL-based business analysis, dashboard development, and actionable business recommendations**.
-
+This project demonstrates an end-to-end data analytics workflow, starting from raw customer transaction data and progressing through **data cleaning, exploratory analysis, SQL-based business analysis, dashboard development, and actionable business recommendations**.
