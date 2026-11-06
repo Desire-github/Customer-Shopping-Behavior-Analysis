@@ -1,6 +1,6 @@
 # Customer Shopping Behavior Analysis
 
-**Power BI Dashboard:** [View the dashboard (PDF)](Dashboard/Customer_Behaviour_Dashboard.pdf)
+**Power BI Dashboard:** [View the dashboard (PDF)](DashBoard/Customer_Behaviour_Dashboard.pdf)
 
 ## 📌 Project Overview
 
